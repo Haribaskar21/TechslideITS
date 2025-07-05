@@ -32,12 +32,14 @@ import AllTags from './pages/admin/AllTags';
 
 // Route Protection
 import ProtectedRoute from './components/ProtectedRoute';
+import ScrollToTop from './components/ScrollToTop';
 
 const adminSecret = import.meta.env.VITE_ADMIN_SECRET;
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <ToastContainer position="top-right" autoClose={3000} theme="colored" />
       <Routes>
 
